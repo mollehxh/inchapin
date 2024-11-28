@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/rounded-logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./index.min.css" />
+    <title>INCHAPIN</title>
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="column header-start">
+        <nav class="header__menu">
+          <div class="burger">
+            <span></span>
+          </div>
+          <p>Меню</p>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link"></a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link"></a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link"></a>
+            </li>
+          </ul>
+        </nav>
+        <svg
+          class="svg-phone-icon-dims phone-icon open-order-modal"
+          width="43"
+          height="43"
+        >
+          <use xlink:href="./images/sprite.svg#phone-icon"></use>
+        </svg>
+
+        <div class="dropdown">
+  <div class="select">
+    <div class="selected">
+      <div class="slide-in">
+        <span data-hover="Выбрать квартиру">Выбрать квартиру</span>
+      </div>
+    </div>
+
+    <svg class="svg-chevron-down-dims" width="14" height="15">
+      <use xlink:href="./images/sprite.svg#chevron-down"></use>
+    </svg>
+  </div>
+  <ul class="menu"></ul>
+</div>
+
+      </div>
+      <div class="column header-center">
+        <svg class="svg-logo-dims logo">
+          <use xlink:href="./images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="column header-end">
+        <p>+7 495 527 21 21</p>
+        <div class="slide-in">
+          <a class="link open-order-modal" href="#">
+            <span data-hover="Заказать звонок">Заказать звонок</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main">
+      <section class="section section-hero">
+  <div class="container section-hero-inner">
+    <picture>
+      <source
+        type="image/webp"
+        srcset="./images/hero-image-360.webp"
+        media="(max-width: 360px)"
+      />
+      <source
+        type="image/webp"
+        srcset="./images/hero-image-768.webp"
+        media="(max-width: 768px)"
+      />
+      <source
+        type="image/webp"
+        srcset="./images/hero-image-1024.webp"
+        media="(max-width: 1024px)"
+      />
+      <source
+        type="image/webp"
+        srcset="./images/hero-image-1440.webp"
+        media="(max-width: 1440px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="./images/hero-image-360.jpg"
+        media="(max-width: 360px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="./images/hero-image-768.jpg"
+        media="(max-width: 768px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="./images/hero-image-1024.jpg"
+        media="(max-width: 1024px)"
+      />
+      <source
+        type="image/jpeg"
+        srcset="./images/hero-image-1440.jpg"
+        media="(max-width: 1440px)"
+      />
+      <img class="section-hero__image" src="./images/hero-image.webp" alt="" />
+    </picture>
+
+    <div class="section-hero__bottom">
+      <p class="section-hero__text">
+        дом бизнес-класса <br />
+        для ценителей роскоши
+      </p>
+      <h1 class="section-hero__title">inchapin</h1>
+    </div>
+  </div>
+</section>
+
+      <section class="section section-about">
+  <div class="container section-about-inner">
+    <div class="section-about__image-container">
+      <svg class="svg-rounded-logo-dims section-about__image-decoration">
+        <use xlink:href="./images/sprite.svg#rounded-logo"></use>
+      </svg>
+      <p class="section-about__title">О проекте</p>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="./images/about-image-360.webp"
+          media="(max-width: 360px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-768.webp"
+          media="(max-width: 768px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-1024.webp"
+          media="(max-width: 1024px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-1440.webp"
+          media="(max-width: 1440px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-360.jpg"
+          media="(max-width: 360px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-768.jpg"
+          media="(max-width: 768px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-1024.jpg"
+          media="(max-width: 1024px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-1440.jpg"
+          media="(max-width: 1440px)"
+        />
+        <img
+          class="section-about__image"
+          src="./images/about-image.webp"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div class="section-about__content">
+      <p class="section-about__text">
+        Уютное и безопасное<br />
+        пространство для счастливой,<br />
+        <span class="text--accent">спокойной и размеренной жизни</span>
+      </p>
+      <p class="section-about__description">
+        <span class="text--accent"
+          >Квартиры от 65 до 356 м2 с чистовой отделкой,<br
+        /></span>
+        балконами, лоджиями и террасами В собственной ЗАКРЫТОЙ охраняемой
+        территориИ.
+      </p>
+      <div class="section-about__video">
+        <div class="section-about__video-text">
+          <p class="section-about__video-title">Видео о проекте</p>
+          <p class="section-about__video-time">1:25 минут</p>
+        </div>
+        <span></span>
+        <div class="section-about__video-preview video-trigger">
+          <img src="./images/video-preview.webp" alt="Video preview" />
+          <svg class="svg-play-video-dims">
+            <use xlink:href="./images/sprite.svg#play-video"></use>
+          </svg>
+          <div class="video-container">
+            <video width="400" controls>
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <div class="modal">
+  <div class="close-icon modal__close">
+    <span></span>
+    <span></span>
+  </div>
+  <h2 class="modal__title">Заказать звонок</h2>
+  <form class="modal__form">
+    <label class="modal__label">
+      <input class="modal__input" name="name" type="text" />
+      <span class="modal__placeholder">Ваше имя</span>
+    </label>
+    <label class="modal__label">
+      <input class="modal__input" name="phone" type="tel" />
+      <span class="modal__placeholder">Телефон</span>
+    </label>
+    <label class="modal__label">
+      <input class="modal__input" name="email" type="email" />
+      <span class="modal__placeholder">E-mail</span>
+    </label>
+    <p class="modal__disclaimer">
+      Нажимая на кнопку «Отправить», вы ознакомлены<br />
+      и соглашаетесь с
+      <a href="#">политикой обработки персональных данных</a>
+    </p>
+    <button class="button modal__button modal__close" type="submit">
+      Отправить
+    </button>
+  </form>
+</div>
+
+    <script src="./index.min.js"></script>
+  </body>
+</html>
