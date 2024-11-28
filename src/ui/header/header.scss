@@ -1,0 +1,137 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #fff;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    height: 8.125rem;
+
+    @media (max-width: 1440px) {
+      height: 6.25rem;
+    }
+
+    @media (max-width: 1024px) {
+      height: 5rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  &-start,
+  &-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 1024px) {
+      gap: 1rem;
+    }
+  }
+
+  &-start {
+    justify-self: start;
+
+    @media (max-width: 1024px) {
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &-end {
+    justify-self: end;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__menu {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &:hover .burger::before {
+      top: -0.125rem;
+    }
+    &:hover .burger::after {
+      bottom: -0.125rem;
+    }
+  }
+
+  &__menu-list {
+    display: none;
+  }
+}
+
+.column {
+  align-self: center;
+}
+
+.burger {
+  position: relative;
+  width: 2rem;
+  height: 0.875rem;
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2f80ed;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    left: 0;
+    background: #2f80ed;
+    transition: all 0.3s ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.phone-icon {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}

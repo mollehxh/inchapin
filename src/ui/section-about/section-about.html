@@ -1,0 +1,92 @@
+<section class="section section-about">
+  <div class="container section-about-inner">
+    <div class="section-about__image-container">
+      <svg class="svg-rounded-logo-dims section-about__image-decoration">
+        <use xlink:href="./images/sprite.svg#rounded-logo"></use>
+      </svg>
+      <p class="section-about__title">О проекте</p>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="./images/about-image-360.webp"
+          media="(max-width: 360px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-768.webp"
+          media="(max-width: 768px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-1024.webp"
+          media="(max-width: 1024px)"
+        />
+        <source
+          type="image/webp"
+          srcset="./images/about-image-1440.webp"
+          media="(max-width: 1440px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-360.jpg"
+          media="(max-width: 360px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-768.jpg"
+          media="(max-width: 768px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-1024.jpg"
+          media="(max-width: 1024px)"
+        />
+        <source
+          type="image/jpeg"
+          srcset="./images/about-image-1440.jpg"
+          media="(max-width: 1440px)"
+        />
+        <img
+          class="section-about__image"
+          src="./images/about-image.webp"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div class="section-about__content">
+      <p class="section-about__text">
+        Уютное и безопасное<br />
+        пространство для счастливой,<br />
+        <span class="text--accent">спокойной и размеренной жизни</span>
+      </p>
+      <p class="section-about__description">
+        <span class="text--accent"
+          >Квартиры от 65 до 356 м2 с чистовой отделкой,<br
+        /></span>
+        балконами, лоджиями и террасами В собственной ЗАКРЫТОЙ охраняемой
+        территориИ.
+      </p>
+      <div class="section-about__video">
+        <div class="section-about__video-text">
+          <p class="section-about__video-title">Видео о проекте</p>
+          <p class="section-about__video-time">1:25 минут</p>
+        </div>
+        <span></span>
+        <div class="section-about__video-preview video-trigger">
+          <img src="./images/video-preview.webp" alt="Video preview" />
+          <svg class="svg-play-video-dims">
+            <use xlink:href="./images/sprite.svg#play-video"></use>
+          </svg>
+          <div class="video-container">
+            <video width="400" controls>
+              <source
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
